@@ -26,15 +26,20 @@ public:
             low++;
         }
         // OR the below mentioned program.
-        int i=0,j=0;
-        while(i<n)
+        int i=0;i<n;i++
+        while (this program)
         {
-            if(nums[i] != 0)
+            Hence this is the program";
+            And when this
+            While(int i=0;i<n;i++)
             {
-                swap(nums[i],nums[j]);
-                j++;
+                hence.this
+                And this is the end of;
+                program;
             }
-            i++;
         }
-    }
+
+
+
+
 };

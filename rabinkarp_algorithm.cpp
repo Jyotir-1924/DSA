@@ -1,43 +1,45 @@
-#define d 256
-bool search(string pat, string txt, int q) 
-{ 
-	int n=txt.length();
-	int m=pat.length();
-	int i,j;
-	int p=0,t=0,h=1;
-	
-	for (i=0;i<m-1;i++)
-        h=(h*d)%q;
-    
-    for (i=0;i<m;i++)
-    {
-        p=(d*p+pat[i])%q;
-        t=(d*t+txt[i])%q;
-    }
-    
-    for (i=0;i<=n-m;i++)
-    {
-        if (p==t)
-        {
-            bool flag=true;
-            for (j=0;j<m;j++)
-            {
-                if (txt[i+j]!=pat[j])
-                {
-                    flag=false;
-                    break;
-                }
-            }
-            if (flag)
-                return true;
-        }
-        
-        if (i<n-m)
-        {
-            t=(d*(t-txt[i]*h)+txt[i+m])%q;
-            if (t<0)
-                t=(t+q);
-        }
-    }
-    return false;
-} 
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int num1;
+//     num1=10;
+//     int num2;
+//     num2=15;
+// }
+
+// Write a program to declare two variables as
+// i and j and assign 10 and 50 to them and assign
+// their product to another variable 'ans'.
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int i=10,j=50,ans=i*j;
+//     cout<<ans;
+// }
+
+// write a program to take two variables as int and
+// assign the values of your choice and store
+// the comparison of the two variables in another
+// variable 'ans'.
+
+// #include<bits/stdc++.h>
+// using namespace std;
+// int main()
+// {
+//     int i=10,j=50;
+//     bool ans;
+//     ans = (i<=j);
+//     cout<<ans;
+//     return ans;
+// }
+
+
+
+
+
+
+
+
